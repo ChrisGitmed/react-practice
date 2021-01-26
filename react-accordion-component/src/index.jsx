@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Accordion from './accordion';
 
 ReactDOM.render(
-  <h1>Hello world!</h1>,
+  <Accordion />,
   document.querySelector('#root')
 )
