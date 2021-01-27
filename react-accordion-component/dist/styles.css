@@ -16,6 +16,10 @@ p {
   background-color: lightgray;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Only for cleanish layout while developing */
 .accordion {
   margin: auto;
