@@ -1,0 +1,23 @@
+p {
+  font-size: 0.8rem
+}
+
+.accordion {
+  max-width: 400px;
+}
+
+.accordion > div {
+  border: 1px solid black;
+  padding: 0rem 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  background-color: lightgray;
+}
+
+/* Only for cleanish layout while developing */
+.accordion {
+  margin: auto;
+  margin-top: 4rem;
+}

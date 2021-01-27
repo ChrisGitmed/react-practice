@@ -4,7 +4,7 @@ export default class Accordion extends React.Component {
   render() {
     return (
       <div className="accordion">
-        <div>
+        <div className="title">
           <h3>Hypertext Markup Language</h3>
         </div>
         <div>
@@ -15,7 +15,7 @@ export default class Accordion extends React.Component {
             technologies for the World Wide Web.
           </p>
         </div>
-        <div>
+        <div className="title">
           <h3>Cascading Style Sheets</h3>
         </div>
         <div>
@@ -26,7 +26,7 @@ export default class Accordion extends React.Component {
             Wide Web, alongside HTML and JavaScript.
           </p>
         </div>
-        <div>
+        <div className="title">
           <h3>JavaScript</h3>
         </div>
         <div>
