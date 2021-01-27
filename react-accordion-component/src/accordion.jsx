@@ -24,18 +24,18 @@ export default class Accordion extends React.Component {
     let cssTextClass = 'hidden';
     let jsTextClass = 'hidden';
 
-    if ( text === 'html') {
-      htmlTextClass = ''
+    if (text === 'html') {
+      htmlTextClass = 'text-box'
       cssTextClass = 'hidden'
       jsTextClass = 'hidden'
     } else if (text === 'css') {
       htmlTextClass = 'hidden'
-      cssTextClass = ''
+      cssTextClass = 'text-box'
       jsTextClass = 'hidden'
     } else if (text === 'js') {
       htmlTextClass = 'hidden'
       cssTextClass = 'hidden'
-      jsTextClass = ''
+      jsTextClass = 'text-box'
     }
 
     return (

@@ -1,9 +1,15 @@
+html {
+  background-color: #81b29a;
+}
+
 p {
   font-size: 0.8rem
 }
 
 .accordion {
   max-width: 400px;
+  margin: auto;
+
 }
 
 .accordion > div {
@@ -13,15 +19,21 @@ p {
 }
 
 .title {
-  background-color: lightgray;
+  background-color: #f2cc8f;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.title:hover {
+  cursor: pointer;
+  background-color: #dbb67a;
+  transition: 0.2s;
+}
+
+.text-box {
+  background-color: #f4f1de;
 }
 
 .hidden {
   display: none;
-}
-
-/* Only for cleanish layout while developing */
-.accordion {
-  margin: auto;
-  margin-top: 4rem;
 }
