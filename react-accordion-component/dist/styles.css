@@ -1,5 +1,9 @@
 html {
-  background-color: #81b29a;
+  background-color: #463f3a;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -7,33 +11,29 @@ p {
 }
 
 .accordion {
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
-
-}
-
-.accordion > div {
   border: 1px solid black;
-  padding: 0rem 1rem;
-  margin-bottom: 0.25rem;
+
 }
 
-.title {
-  background-color: #f2cc8f;
-  border-radius: 10px;
+.accordion > h1 {
+  background-color: #f4f3ee;
   transition: 0.2s;
+  border-top: 1px solid #bcb8b1;
 }
 
-.title:hover {
+.accordion > p {
+  background-color: #f4f3ee;
+}
+
+.accordion > h1, p {
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.accordion > h1:hover {
   cursor: pointer;
-  background-color: #dbb67a;
+  background-color: #e0afa0;
   transition: 0.2s;
-}
-
-.text-box {
-  background-color: #f4f1de;
-}
-
-.hidden {
-  display: none;
 }
