@@ -7,14 +7,13 @@ h1 {
 }
 
 p {
-  font-size: 0.8rem
+  font-size: 0.8rem;
 }
 
 .accordion {
   max-width: 500px;
   margin: auto;
   border: 1px solid black;
-
 }
 
 .accordion > h1 {
@@ -27,7 +26,8 @@ p {
   background-color: #f4f3ee;
 }
 
-.accordion > h1, p {
+.accordion > h1,
+.accordion > p {
   padding: 0.5rem 1rem;
   margin: 0;
 }

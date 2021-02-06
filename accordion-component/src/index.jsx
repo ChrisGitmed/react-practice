@@ -7,4 +7,4 @@ ReactDOM.render(
     <Accordion />
   </div>,
   document.querySelector('#root')
-)
+);
