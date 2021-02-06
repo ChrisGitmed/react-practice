@@ -6,20 +6,16 @@ const topics = [
   { title: 'JavaScript', content: 'Here is some text about JS' }
 ];
 
-class Content extends React.Component {
-  render() {
-    return (
-      <p>{this.props.content}</p>
-    );
-  }
+function Content(props) {
+  return (
+    <p>{props.content}</p>
+  );
 }
 
-class Title extends React.Component {
-  render() {
-    return (
-      <h1 onClick={this.props.handleClick}>{this.props.title}</h1>
-    );
-  }
+function Title(props) {
+  return (
+    <h1 onClick={props.handleClick}>{props.title}</h1>
+  );
 }
 
 export default function Accordion() {
@@ -44,44 +40,5 @@ export default function Accordion() {
       );
     }
   });
-
   return titleArray;
 }
-
-/**
-export default class Accordion extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { content: '' };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(index) {
-    if (this.state.content === topics[index].content) {
-      this.setState({
-        content: ''
-      });
-    } else {
-      this.setState({
-        content: topics[index].content
-      });
-    }
-  }
-
-  render() {
-    const titleArray = [];
-    topics.forEach((element, index) => {
-      titleArray.push(
-        <Title handleClick={() => this.handleClick(index)} title={element.title} />
-      );
-      if (element.content === this.state.content) {
-        titleArray.push(
-          <Content content={this.state.content}/>
-        );
-      }
-    });
-
-    return titleArray;
-  }
-}
-*/
