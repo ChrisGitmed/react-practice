@@ -7,17 +7,11 @@ export default function ToggleSwitch() {
     isActive ? setIsActive(false) : setIsActive(true);
   }
 
-  let classString = 'inner-border';
-  if (isActive) {
-    classString = 'inner-border on';
-  }
-
   return (
     <div className="border">
-      <div className={classString}>
+      <div className={`inner-border ${isActive ? 'on' : ''}`}>
         <div className="circle" onClick={handleClick}></div>
       </div>
     </div>
   );
-
 }
