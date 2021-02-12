@@ -4,20 +4,18 @@ export default function ToggleSwitch() {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick(event) {
-    if (isActive) {
-      setIsActive(false);
-    } else setIsActive(true);
+    isActive ? setIsActive(false) : setIsActive(true);
   }
 
-  let classString = 'outer';
+  let classString = 'inner-border';
   if (isActive) {
-    classString = 'outer on';
+    classString = 'inner-border on';
   }
 
   return (
     <div className="border">
       <div className={classString}>
-        <div className="inner" onClick={handleClick}></div>
+        <div className="circle" onClick={handleClick}></div>
       </div>
     </div>
   );
