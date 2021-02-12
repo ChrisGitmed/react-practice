@@ -27,3 +27,11 @@
   width: 40%;
   border-radius: 50%;
 }
+
+.off {
+  justify-content: flex-start;
+}
+
+.on {
+  justify-content: flex-end;
+}
