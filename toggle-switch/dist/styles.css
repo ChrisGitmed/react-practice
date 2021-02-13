@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.border {
+  background-color: #333;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 30%;
+  display: flex;
+  padding: 0.1rem;
+}
+
+.inner-border {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  width: 100%;
+  border-radius: 30%;
+  display: flex;
+  padding: 0.2rem;
+}
+
+.circle {
+  cursor: pointer;
+  border: 1px solid #333;
+  background-color: #eee;
+  width: 40%;
+  border-radius: 50%;
+}
+
+.off {
+  justify-content: flex-start;
+  background-color: #ccc;
+  transition: 0.3s;
+}
+
+.on {
+  justify-content: flex-end;
+  background-color: lightgreen;
+  transition: 0.3s;
+}
+
+.light-mode {
+  background-color: #eee;
+  transition: 0.3s;
+}
+
+.dark-mode {
+  background-color: #333;
+  transition: 0.3s;
+}
