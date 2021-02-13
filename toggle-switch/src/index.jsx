@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ToggleSwitch from './toggle-switch';
+import PageContainer from './page-container';
 
 ReactDOM.render(
-  <div className="page-container">
-    <ToggleSwitch />
-  </div>,
+  <PageContainer />,
   document.querySelector('#root')
 );

@@ -4,8 +4,8 @@ export default function ToggleSwitch(props) {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick(event) {
+    props.onChange(!isActive);
     isActive ? setIsActive(false) : setIsActive(true);
-    // props.onChange(isActive);
   }
 
   return (
